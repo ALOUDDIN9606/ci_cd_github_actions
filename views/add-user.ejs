@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="box-5">
+      <h2>About Us</h2>
+      <form action="/add-user" method="post" id="post-form">
+        <label for="username">User name</label> <br />
+        <input class="name-inp" type="text" name="username" id="username" /> <br /><br />
+        <label for="email">Email</label> <br />
+        <input class="name-inp type="email" name="email" id="email" /> <br /><br />
+
+        <button class="name-btn" type="submit">Saqlash</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="box">
+      <h1>Foydalanuvchilar</h1>
+      <ol>
+        <% users.forEach((user) => { %>
+        <li>
+          <a class="text-name" href="/user/<%= user.id %>">
+            <%=user.username %> - <%=user.email %>
+          </a>
+        </li>
+        <% }) %>
+      </ol>
+      <h3>
+        <a class="text" href="/add-user">Yangi foydalanuvchi qo'shish.</a>
+      </h3>
+    </div>
+  </body>
+</html>
